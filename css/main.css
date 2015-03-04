@@ -115,7 +115,38 @@ div {
 }
 
 .js-circle-bounce {
+    -webkit-animation: circle-bounce 1s linear;
     animation: circle-bounce 1s linear;
+}
+
+@-webkit-keyframes circle-bounce {
+    0% {
+        top: 50px;
+    }
+    20% {
+        top: 15px;
+    }
+    30% {
+        right: 25px;
+    }
+    50% {
+        top: 50px;
+    }
+    55% {
+        right: 50px;
+    }
+    60% {
+        top: 8px;
+    }
+    80% {
+        right: 70px;
+    }
+    90% {
+        top: 50px;
+    }
+    100% {
+        right: 80px;
+    }
 }
 
 @keyframes circle-bounce {

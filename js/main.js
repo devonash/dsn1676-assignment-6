@@ -23,5 +23,9 @@ $btnCollapse.on('click', function () {
 });
 
 $btnBounce.on('click', function () {
-    $circle.toggleClass('js-circle-bounce');
+    $circle.addClass('js-circle-bounce');
+});
+
+$circle.on('webktiAnimationEnd animationend', function () {
+    $circle.removeClass('js-circle-bounce');
 });
