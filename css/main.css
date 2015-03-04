@@ -113,3 +113,37 @@ div {
 .js-box-collapse {
     max-height: 10em;
 }
+
+.js-circle-bounce {
+    animation: circle-bounce 1s linear;
+}
+
+@keyframes circle-bounce {
+    0% {
+        top: 50px;
+    }
+    20% {
+        top: 15px;
+    }
+    30% {
+        right: 25px;
+    }
+    50% {
+        top: 50px;
+    }
+    55% {
+        right: 50px;
+    }
+    60% {
+        top: 8px;
+    }
+    80% {
+        right: 70px;
+    }
+    90% {
+        top: 50px;
+    }
+    100% {
+        right: 80px;
+    }
+}
